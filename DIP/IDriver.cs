@@ -8,6 +8,9 @@ namespace DIP
 {
     public interface IDriver
     {
+        //车辆型号
+        void setCar(ICar car);
+
         //是司机就应该会驾驶汽车
         void drive();
     }

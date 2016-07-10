@@ -4,7 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//依赖倒置原则
+///依赖倒置原则
+///1.构造函数传递依赖对象
+///2.Setter方法传递依赖对象
+///3.接口声明依赖对象
 
 
 namespace DIP
@@ -15,7 +18,8 @@ namespace DIP
         {
             ICar benz = new Benz();
 
-            IDriver zhangSan = new Driver(benz);
+            IDriver zhangSan = new Driver();
+            zhangSan.setCar(benz);
             //张三开车
             zhangSan.drive();
         }
@@ -25,14 +29,14 @@ namespace DIP
     {
         private ICar car;
 
-        public Driver(ICar _car)
+        public void setCar(ICar car)
         {
-            this.car = _car;
+            this.car = car;
         }
 
         public void drive()
         {
-            car.run();
+            this.car.run();
         }
     }
 
