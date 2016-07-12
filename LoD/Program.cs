@@ -24,7 +24,7 @@ namespace LoD
             }
             Teacher teacher = new Teacher();
             //老师发布命令
-            teacher.commond(new GroupLeader(listGirls));
+            teacher.Commond(new GroupLeader(listGirls));
         }
     }
 }

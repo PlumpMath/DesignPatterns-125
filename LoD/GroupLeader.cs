@@ -10,12 +10,13 @@ namespace LoD
         //传递全班的女生进来
         public GroupLeader(List<Girl> _listGirls)
         {
-            this.listGirls = _listGirls;
+            listGirls = _listGirls;
         }
+
         //清查女生数量
-        public void countGirls()
+        public void CountGirls()
         {
-            Console.WriteLine("女生数量是：" + this.listGirls.Count);
+            Console.WriteLine("女生数量是：" + listGirls.Count);
         }
     }
 }
