@@ -1,5 +1,4 @@
-# DesignPatterns
-设计模式Code
+# [Design Patterns][http://www.oodesign.com/]
 
 软件设计需满足SOLID软件设计原则
 
