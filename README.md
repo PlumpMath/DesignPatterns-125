@@ -1,8 +1,8 @@
-# [Design Patterns][http://www.oodesign.com/]
+# [Design Patterns](http://www.oodesign.com/)
 
 软件设计需满足SOLID软件设计原则
 
-S.O.L.I.D.是一组面对面向对象设计的最佳实践的设计原则。代表下面设计原则：
+S.O.L.I.D.是一组面对面向对象设计的最佳实践的设计原则。代表下面的设计原则：
 
 ###单一职责原则(Single Responsibility Principle，SRP) 
 
@@ -25,13 +25,13 @@ S.O.L.I.D.是一组面对面向对象设计的最佳实践的设计原则。代�
 * 迪米特法则要求类“羞涩”一点，尽量不要对外公布太多的public方法和非静态的public变量，尽量内敛，多使用private、package-private、protected等访问权限。
 * 是自己的就是自己的：如果一个方法放在本类中，既不增加类间关系，也对本类不产生负面影响，那就放置在本类中。
 
-###接口隔离原则(Interface Segregation Principle)
+###接口隔离原则(Interface Segregation Principle，ISP)
 * 接口要尽量小
 * 接口要高内聚
 * 定制服务
 * 接口设计是有限度的
 
-###依赖倒置原则(Dependence Inversion Principle)
+###依赖倒置原则(Dependence Inversion Principle，DIP)
 * 构造函数传递依赖对象
 * Setter方法传递依赖对象
 * 接口声明依赖对象
